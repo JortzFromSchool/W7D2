@@ -1,0 +1,10 @@
+<form action="<%= users_url %>" method="POST">
+    <%= auth_token %>
+    <label for="email">email:
+        <input id="email" type="text" name="user[email]" >
+    </label>
+    <label for="password">Password:
+        <input id="password" type="password" name="user[password]">
+    </label>
+    <input type="submit" value="Create User">
+</form>
